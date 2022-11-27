@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      .form {
+        width: 350px;
+        margin-top: 10px;
+        margin-left: 100px;
+      }
+      .navbar-header {
+        margin-left: 80px;
+      }
+      .dropdown-toggle {
+        margin-right: 80px;
+      }
+      .navbar {
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: rgb(17, 162, 210);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .navbar a:hover {
+        background: #ddd;
+        color: blue;
+      }
+      .main {
+        padding: 16px;
+        margin-top: 50px;
+        height: 1500px;
+      }
+
+      .haer1 {
+        border: 5;
+        height: 10px;
+        box-shadow: 0 3px 3px -3px black inset;
+        margin-top: -25px;
+      }
+
+      .haer2 {
+        border: 5;
+        height: 10px;
+        box-shadow: 0 3px 3px -3px black inset;
+        margin-top: -15px;
+      }
+
+      .y {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        color: gray;
+      }
+
+      .z {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: gray;
+        margin-top: 15px;
+      }
+
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+      }
+      .contoh3 {
+        font-size: 14.5px;
+        line-height: 1.5em;
+      }
+      .contoh31 {
+        font-size: 27px;
+        line-height: 1.5em;
+      }
+      .isi {
+        background-color: white;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+        border-color: black;
+        border-style: solid;
+      }
+      .apa {
+        color: black;
+        text-shadow: 3px 2px 1px rgb(162, 162, 162);
+      }
+      .tb{
+
+      }
+      body {
+        background-color: #6D9886;
+      }
+      .jumbo{
+        background-color: white;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+        border-color: black;
+        border-style: solid;
+      }
+      .line{
+        border-color: black;
+        border-style: solid;
+      }
+      .kotak{
+        border-color: black;
+        border-style: solid;
+      }
+      .kata{
+        text-shadow: 3px 2px 1px darkgray;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- logo sampai subjects -->
+    <div class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="navbar-header">
+              <button
+                class="navbar-toggle"
+                data-target="#mobile_menu"
+                data-toggle="collapse"
+              >
+                <span class="icon-bar"></span><span class="icon-bar"></span
+                ><span class="icon-bar"></span>
+              </button>
+              <img
+                class="navbar-brand"
+                src="C:\Users\ASUS\Documents\HTML\Project proposal\Logo Tenda Belajar.png"
+                width="60px"
+                height="45px"
+              />
+              <p class="navbar-brand y">tendabelajar.com</p>
+            </div>
+            <div class="navbar-collapse collapse" id="mobile_menu">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="Tampilan_awal_new.html">Home</a>
+                </li>
+                <!-- masuk ke halaman awal -->
+                <li><a href="#">About Us</a></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >Subjects <span class="caret"></span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="hal_awal_PAI.html">Pendidikan Agama Islam</a>
+                    </li>
+                    <li><a href="#">Bahasa Indonesia</a></li>
+                    <li><a href="#">PPKwn</a></li>
+                    <li><a href="#">Matematika</a></li>
+                    <li><a href="#">PKKwu</a></li>
+                    <li><a href="#">Bahasa Inggris</a></li>
+                    <li><a href="#">Fisika</a></li>
+                    <li><a href="#">Simulasi Digital</a></li>
+                    <li><a href="#">Penjaskes</a></li>
+                    <li><a href="#">Bahasa Sunda</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- akhir subjects -->
+
+              <!-- search dan logout -->
+              <ul class="nav navbar-nav">
+                <li>
+                  <form action="" class="form">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input
+                          type="search"
+                          name="search"
+                          id=""
+                          placeholder="Search Anything Here..."
+                          class="form-control"
+                        />
+                        <span class="input-group-addon"
+                          ><span class="glyphicon glyphicon-search"></span
+                        ></span>
+                      </div>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    ><span class="glyphicon glyphicon-log-in"></span> Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <!-- akhir navbar -->
+
+    <!-- content -->
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="jumbotron text-center jumbo">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 text-justify">
+                  <h1>Selamat Datang!</h1>
+                  <hr class="line">
+                </div>
+              </div>
+              <div class="row col-md-8 text-justify">
+                <p>
+                  Pengalaman belajar yang kamu cari bisa dimulai dari sini!
+                  <br />
+                  Yuk, mulai belajar di TendaBelajar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+            <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 text-justify isi">
+              <h2 class="apa"> <b>Apa itu <u class="tb">TendaBelajar</u>?</b> </h2>
+              <hr class="line" />
+             
+              <p><b>
+                TendaBelajar adalah sebuah website media pembelajaran yang dapat
+                mempermudah dan membantu para pelajar untuk mencukupi kebutuhan
+                belajar <br />
+                <br />
+                Jadi website ini bisa menjadi alternatif yang praktis dan murah
+                untuk buku paket yang memiliki harga yang terbilang cukup mahal
+                </b></p>
+            </div>
+            <div class="col-sm-1"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10 text-justify isi">
+                    <h2 class="apa"><b>Kenapa harus <u>TendaBelajar</u>?</b></h2>
+                    <hr class="line" />
+                    <ul>
+                        <li><h4>Materi yang lengkap</h4>Materi yang disediakan oleh TendaBelajar lengkap sehingga dapat membantu mu untuk belajar</li>
+                        <li><h4>Gratis</h4>Website kami tidak memakan biaya apa pun alias gratis</li>
+                        <li><h4>Materi bisa didownload</h4>Materi yang kami sediakan bisa didownload sehingga kamu masih bisa belajar dengan nyaman</li>
+                        <li><h4>Tampilan materi yang menarik</h4>Materi yang kami sediakan dibungkus dengan menarik sehingga kamu tidak akan cepat bosan</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+            </div>
+    </div>
+
+    <!-- /content -->
+    <br><br>
+    <!-- footer -->
+    <div class="jumbotron text-center" style="margin-bottom: 0">
+        <p>Footer</p>
+      </div>
+      <!-- /footer -->
+  </body>
+</html>

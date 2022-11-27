@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .form{
+            width: 350px;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+        .navbar-header{
+            margin-left: 80px;
+        }
+        .dropdown-toggle{
+            margin-right: 80px;
+        }
+        .navbar {
+            background-color: white;
+            position: fixed;
+            top: 5px;
+            width: 100%;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: green;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background: #ddd;
+            color: blue;
+        }
+        .main {
+            padding: 16px;
+            margin-top: 50px;
+            height: 1500px;
+        }
+
+        .haer1{
+            border: 5;
+            height: 10px;
+            box-shadow: 0 3px 3px -3px black inset;
+            margin-top: -25px;
+        }
+
+        .haer2{
+            border: 5;
+            height: 10px;
+            box-shadow: 0 3px 3px -3px black inset;
+            margin-top: -15px;
+        }
+        
+        .y{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        color: gray;
+        }
+
+        .z{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: gray;
+        margin-top: 15px;
+        }
+
+        h6{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        color: black;
+        }
+
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+        }
+        
+        .contoh3 { 
+            font-size:16px; 
+            line-height: 1.5em;
+        }
+</style>
+</head>
+<body>
+
+    <!-- logo sampai subjects -->
+    <div class="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <img class="navbar-brand" src="tb2.jpg" width="60px" height="45px">
+                        <p class="navbar-brand y">tendabelajar.com</p>
+                    </div>
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li> <!-- masuk ke halaman awal -->
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Subjects <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Pendidikan Agama Islam</a></li>
+                                    <li><a href="#">Bahasa Indonesia</a></li>
+                                    <li><a href="#">PPKwn</a></li>
+                                    <li><a href="#">Matematika</a></li>
+                                    <li><a href="#">PKKwu</a></li>
+                                    <li><a href="#">Bahasa Inggris</a></li>
+                                    <li><a href="#">Fisika</a></li>
+                                    <li><a href="#">Simulasi Digital</a></li>
+                                    <li><a href="#">Penjaskes</a></li>
+                                    <li><a href="#">Bahasa Sunda</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+    <!-- akhir subjects -->
+
+    <!-- search dan logout -->
+    <ul class="nav navbar-nav">
+        <li>
+            <form action="" class="form">
+                <div class="form-group" >
+                    <div class="input-group">
+                        <input type="search" name="search" id="" placeholder="Search Anything Here..." class="form-control">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                    </div>
+                </div>
+            </form>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Logout </a>
+        </li>
+    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <!-- akhir navbar -->
+
+    <div class="main">
+        <table border="0" width="65%" align="center">
+            <tr>
+                <th>
+                    <h2>Pelajaran : Informatika</h2>
+                </th>
+                <th>
+                    <div class="y" align="right">tendabelajar.com / Kelas 10 / Informatika </div>
+                </th>
+            </tr>
+            <tr>  
+                <th colspan="2">
+                    <div class="haer1"><hr></div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <nav>
+                        <a href="#" class="stretched-link">Materi&nbsp;&nbsp;&nbsp;</a>
+                        <a href="#" class="stretched-link">Contoh Soal</a>
+                    </nav>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <div class="haer2"><hr></div>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2"><br>
+                    <h3>Page Set Up</h3><br>
+                    <center>
+                    <img src="1.jpeg" width="500px" height="100px"/>
+                    </center>
+                    <br><br>
+                    <h5 class="contoh3">
+                        <ul>
+                            <li type="1">Margins berfungsi untuk menentukan letak pada lembar kerja yang telah diisi tulisan sesuai dengan kebutuhan kita.</li>
+                            <li type="1">Orientation berfungsi untuk mengatur gambar kerja memanjang ke samping landscape atau sesuai dengan lembar kerja yang standar potrait.</li>
+                            <li type="1">Size berfungsi untuk memisahkan lembar kerja sebelum dan sesudahnya.</li>
+                            <li type="1">Line Number berfungsi untuk memberi nomor halaman pada lembar kerja Microsoft Word</li>
+                            <li type="1">Hyphenation sering kali digunakan sebagai pemisah antara tanda hubung dengan suku kata secara manual atau otomatis.</li>
+                        </ul>
+                    </h5>
+             <!-- <ul> -->
+                        <!-- <li type="1">Margins berfungsi untuk menentukan letak pada lembar kerja yang telah diisi tulisan sesuai dengan kebutuhan kita.</li><br /> -->
+                      <!-- <li type="1">Orientation berfungsi untuk mengatur kembar kerja memanjang ke samping landscape atau sesuai dengan lembar kerja yang standar potrait.</li><br /> -->
+                     <!-- <li type="1">Size berfungsi untuk mengatur jenis ukuran kertas pada lembar kerja Microsoft word.</li><br /> -->
+                    <!-- <li type="1">Breaks berfungsi untuk memisahkan lembar kerja sebelum dan sesudahnya.</li><br /> -->
+                    <!-- <li type="1">Line Number berfungsi untuk memberi nomor halaman pada lembar kerja Microsoft word.</li><br /> -->
+                    <!-- <li type="1">Hyphenation sering kali figunakan sebagai pemisah antara tanda hubung dengan suku kata secara manual atau otomatis.</li> -->
+                       <!-- </ul> -->
+            </tr>
+        </table>
+
+
+        
+      </div>
+
+</body>
+</html>
