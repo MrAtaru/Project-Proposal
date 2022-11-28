@@ -125,6 +125,43 @@
         text-shadow: 3px 2px 1px darkgray;
         color: black;
       }
+      .dropdown-menu>li
+{ position:relative;
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+  cursor:pointer;
+}
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    display:none;
+    margin-top: -1px;
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+  border-left-color:#fff;
+  box-shadow:none;
+}
+.right-caret:after,.left-caret:after
+ {  content:"";
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+  margin-left:5px;
+}
+.right-caret:after
+{ border-left: 5px solid rgb(17, 162, 210);
+}
+.left-caret:after
+{ border-right: 5px solid rgb(17, 162, 210);
+}
     </style>
   </head>
   <body>
@@ -144,39 +181,73 @@
               </button>
               <img
                 class="navbar-brand"
-                src="C:\Users\ASUS\Documents\HTML\Project proposal\Logo Tenda Belajar.png"
+                src="Logo Tenda Belajar.png"
                 width="60px"
                 height="45px"
               />
               <p class="navbar-brand y">tendabelajar.com</p>
             </div>
             <div class="navbar-collapse collapse" id="mobile_menu">
-              <ul class="nav navbar-nav">
-                <li class="active">
-                  <a href="Tampilan_awal_new.html">Home</a>
-                </li>
-                <!-- masuk ke halaman awal -->
-                <li><a href="#">About Us</a></li>
-                <li>
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    >Subjects <span class="caret"></span
-                  ></a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="hal_awal_PAI.html">Pendidikan Agama Islam</a>
-                    </li>
-                    <li><a href="#">Bahasa Indonesia</a></li>
-                    <li><a href="#">PPKwn</a></li>
-                    <li><a href="#">Matematika</a></li>
-                    <li><a href="#">PKKwu</a></li>
-                    <li><a href="#">Bahasa Inggris</a></li>
-                    <li><a href="#">Fisika</a></li>
-                    <li><a href="#">Simulasi Digital</a></li>
-                    <li><a href="#">Penjaskes</a></li>
-                    <li><a href="#">Bahasa Sunda</a></li>
-                  </ul>
-                </li>
-              </ul>
+                <ul class="nav navbar-nav">
+                    
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Beranda</a></li>
+                            <li><a href="about_us_new.html">Tentang Kami</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kelas <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                      <li>
+                                        <a class="trigger right-caret">Kelas 10</a>
+                                        <ul class="dropdown-menu sub-menu">
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\Indo\awal.html">Bahasa Indonesia</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\Inggris\awal.html">Bahasa Inggris</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\Informatika\awal.html">Informatika</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\PAI\awal.html">Pendidikan Agama Islam</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\PKN\awal.html">PPKwn</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\Penjas\awal.html">Penjaskes</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\Project IPAS\awal.html">Project IPAS</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\MTK\awal.html">Matematika</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\Al Quran\awal.html">Al-Qur'an</a></li>
+                                          <li><a href="D:\tenda belajar\bagian produktif\kelas 10\BK\awal.html">BK</a></li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <a class="trigger right-caret">Kelas 11</a>
+                                        <ul class="dropdown-menu sub-menu">
+                                          <li><a href="#">Bahasa Indonesia</a></li>
+                                          <li><a href="#">Bahasa Inggris</a></li>
+                                          <li><a href="#">Bahasa Sunda</a></li>
+                                          <li><a href="#">Simulasi Digital</a></li>
+                                          <li><a href="#">Pendidikan Agama Islam</a></li>
+                                          <li><a href="#">PPKwn</a></li>
+                                          <li><a href="#">PKKwu</a></li>
+                                          <li><a href="#">Penjaskes</a></li>
+                                          <li><a href="#">Fisika</a></li>
+                                          <li><a href="#">Matematika</a></li>
+                                          <li><a href="#">Al-Qur'an</a></li>
+                                          <li><a href="#">BK</a></li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <a class="trigger right-caret">Kelas 12</a>
+                                        <ul class="dropdown-menu sub-menu">
+                                          <li><a href="#">Bahasa Indonesia</a></li>
+                                          <li><a href="#">Bahasa Inggris</a></li>
+                                          <li><a href="#">PKKwu</a></li>
+                                          <li><a href="#">PKKwn</a></li>
+                                          <li><a href="#">Pendidikan Agama Islam</a></li>
+                                          <li><a href="#">Penjaskes</a></li>
+                                          <li><a href="#">Fisika</a></li>
+                                          <li><a href="#">Matematika</a></li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                </li>
+                                
+                              </ul>
+                            </li>
+                          </ul>
 
               <!-- akhir subjects -->
 
@@ -286,5 +357,25 @@
         <p>Footer</p>
       </div>
       <!-- /footer -->
+
+      <script>
+        $(function(){
+  $(".dropdown-menu > li > a.trigger").on("click",function(e){
+    var current=$(this).next();
+    var grandparent=$(this).parent().parent();
+    if($(this).hasClass('left-caret')||$(this).hasClass('right-caret'))
+      $(this).toggleClass('right-caret left-caret');
+    grandparent.find('.left-caret').not(this).toggleClass('right-caret left-caret');
+    grandparent.find(".sub-menu:visible").not(current).hide();
+    current.toggle();
+    e.stopPropagation();
+  });
+  $(".dropdown-menu > li > a:not(.trigger)").on("click",function(){
+    var root=$(this).closest('.dropdown');
+    root.find('.left-caret').toggleClass('right-caret left-caret');
+    root.find('.sub-menu:visible').hide();
+  });
+});
+      </script>
   </body>
 </html>
